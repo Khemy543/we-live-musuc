@@ -18,7 +18,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
-
+import SrollToTop from "react-router-scroll-top";
 import "assets/css/nucleo-icons.css";
 import "assets/scss/blk-design-system-react.scss?v=1.1.0";
 import "assets/demo/demo.css";
@@ -29,6 +29,7 @@ import AllArtist from "views/examples/AllArtist";
 
 ReactDOM.render(
   <BrowserRouter history={history}>
+  <SrollToTop/>
     <Switch>
       <Route
         path="/landing-page"

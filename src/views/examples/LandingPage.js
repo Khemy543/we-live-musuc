@@ -352,7 +352,7 @@ class LandingPage extends React.Component {
                 <Col md="6">
                   <div className="px-md-5">
                     <hr className="line-success" />
-                    <h3>Awesome features</h3>
+                    <h3>Awesome Music</h3>
                     <p>
                       The design system comes with three pre-built pages to help
                       you get started faster. You can change the text and images
