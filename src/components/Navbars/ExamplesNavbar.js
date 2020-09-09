@@ -93,10 +93,10 @@ class PagesNavbar extends React.Component {
               tag={Link}
             >
               <span>WLM• </span>
-              We Live Music
+              Welivemusic
             </NavbarBrand>
             <UncontrolledTooltip placement="bottom" target="navbar-brand">
-            We Live Music
+            Welivemusic
             </UncontrolledTooltip>
             <button
               aria-expanded={this.state.collapseOpen}
@@ -119,7 +119,7 @@ class PagesNavbar extends React.Component {
               <Row>
                 <Col className="collapse-brand" xs="6">
                   <a href="#pablo" onClick={e => e.preventDefault()}>
-                    WLM•We Live Music
+                    WLM•Welivemusic
                   </a>
                 </Col>
                 <Col className="collapse-close text-right" xs="6">

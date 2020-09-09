@@ -55,7 +55,7 @@ class MusicPage extends React.Component {
               className="path"
               src={require("assets/img/path4.png")}
             />
-            <Container style={{marginTop:"100px"}}>
+            <Container style={{marginTop:"80px"}}>
               <Row>
                 <Col md="4" className="ml-auto mr-auto">
                 <h3 style={{textAlign:"center", fontSize:"25px",fontWeight:"bolder"}}>{name}</h3>

@@ -45,20 +45,20 @@ const data = [
                     link:"https://audiomack.com/lucky-gent/song/biem",
                 }
             ],
-            cover:require("assets/img/ryan.jpg"),
+            cover:require("assets/img/biem.jpeg"),
             released:"30 August 2019"
         },
         {
             id:2,
             name:"Low Tempo",
-            artists:"Lucky Gent",
+            artists:"Lovaboi x Neon",
             link:[
                 {
                     name:"Audiomack",
                     link:"https://audiomack.com/lucky-gent/song/low-tempo"
                 }
             ],
-            cover:require("assets/img/ryan.jpg"),
+            cover:require("assets/img/lovetempo.jpeg"),
             released:"30 August 2019"
         },
         {
@@ -71,20 +71,20 @@ const data = [
                     link:"https://audiomack.com/lucky-gent/song/give-me-wine",
                 }
             ],
-            cover:require("assets/img/ryan.jpg"),
+            cover:require("assets/img/givemewine.jpeg"),
             released:"30 August 2019"
         },
         {
             id:4,
             name:"To the club",
-            artists:"Lovaboi",
+            artists:"Munira x Boi_Nah_Nah x Lovaboi",
             link:[
                 {
                     name:"Sound Cloud",
                     link:"https://soundcloud.com/user-642014821/to-the-club",
                 }
             ],
-            cover:require("assets/img/ryan.jpg"),
+            cover:require("assets/img/totheclub.jpeg"),
             released:"30 August 2019"
         }]
     },
