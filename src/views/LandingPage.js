@@ -87,28 +87,31 @@ class LandingPage extends React.Component {
                   <div className="btn-wrapper">
                     <div className="button-container">
                       <Button
-                        className="btn-icon btn-simple btn-round btn-neutral"
-                        color="default"
+                        className="btn-icon btn-round"
+                        color="twitter"
                         href="https://twitter.com/welivemusic2"
                         rel="noopener noreferrer"
+                        id="tooltip639225725"
                         target="_blank"
                       >
                         <i className="fab fa-twitter" />
                       </Button>
                       <Button
-                        className="btn-icon btn-simple btn-round btn-neutral"
-                        color="default"
-                        href="#pablo"
+                        className="btn-icon btn-round"
+                        color="facebook"
+                        href="https://web.facebook.com/Welivemusic-111793120655616?_rdc=1&_rdr"
                         rel="noopener noreferrer"
+                        id="tooltip982846143"
                         target="_blank"
                       >
                         <i className="fab fa-facebook-square" />
                       </Button>
                       <Button
-                        className="btn-icon btn-simple btn-round btn-neutral"
-                        color="default"
+                        className="btn-icon btn-round"
+                        color="dribbble"
                         href="https://www.instagram.com/welivemusic99/"
                         rel="noopener noreferrer"
+                        id="tooltip951161185"
                         target="_blank"
                       >
                         <i className="fab fa-instagram" />

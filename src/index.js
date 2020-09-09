@@ -22,10 +22,11 @@ import SrollToTop from "react-router-scroll-top";
 import "assets/css/nucleo-icons.css";
 import "assets/scss/blk-design-system-react.scss?v=1.1.0";
 import "assets/demo/demo.css";
-import LandingPage from "views/examples/LandingPage.js";
-import ProfilePage from "views/examples/ProfilePage.js";
+import LandingPage from "views/LandingPage.js";
+import ProfilePage from "views/ProfilePage.js";
 import history from "history.js";
-import AllArtist from "views/examples/AllArtist";
+import AllArtist from "views/AllArtist";
+import MusicPage from "views/MusicPage";
 
 ReactDOM.render(
   <BrowserRouter history={history}>
@@ -42,6 +43,10 @@ ReactDOM.render(
       <Route
         path="/allartist-page"
         render={props => <AllArtist {...props} />}
+      /> 
+      <Route
+        path="/music-page"
+        render={props => <MusicPage {...props} />}
       /> 
       <Redirect from="/" to="/landing-page" />
     </Switch>

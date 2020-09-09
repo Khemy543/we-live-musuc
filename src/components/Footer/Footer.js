@@ -60,7 +60,7 @@ class Footer extends React.Component {
             <Col md="3">
               <Nav>
                 <NavItem>
-                  <NavLink href="https://creative-tim.com/contact-us?ref=blkdsr-footer">
+                  <NavLink href="!#">
                     Contact Us
                   </NavLink>
                         We Live Music <br />
@@ -87,7 +87,7 @@ class Footer extends React.Component {
                 <Button
                   className="btn-icon btn-neutral btn-round btn-simple"
                   color="default"
-                  href=""
+                  href="https://web.facebook.com/Welivemusic-111793120655616?_rdc=1&_rdr"
                   id="tooltip230450801"
                   target="_blank"
                 >

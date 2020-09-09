@@ -5,38 +5,87 @@ const data = [
         id:1,
         name:"Roosevelt Ansa- Asare (lovaboi)",
         profile:require("assets/img/lovaboi1.jpeg"),
-        music_type:"Reggae",
+        music_type:" Afrobeats Recording Artist",
+        user:"rapper, singer and songwriter",
         no_of_tracks:4,
-        about:" I'm a simple but smart guy with an amazing voice,I rap and sing/songwriter.My mentor is wizkid.I love all genre of music.",
+        about:" I'm a simple but smart guy with an amazing voice, I rap, sing and also a songwriter.My mentor is wizkid. I love all genre of music.",
         contact:{
-            facebook:"",
-            instagram:"",
-            twitter:"",
-            email:""
+            facebook:"https://web.facebook.com/roosevelt.ansaasare",
+            instagram:"https://www.instagram.com/_lovaboi_/",
+            twitter:"https://twitter.com/_lovaboi_",
+            email:"rooseveltansaasare.raa@gmail.com"
         },
+        images:[
+            {
+                id:1,
+                src:require("assets/img/lovaboi1.jpeg"),
+                caption:"LovaBoi",
+                altText:""
+            },
+            {
+                id:2,
+                src:require("assets/img/lovaboi2.jpeg"),
+                caption:"LovaBoi",
+                altText:""
+            },
+            {
+                id:3,
+                src:require("assets/img/head2.jpeg"),
+                caption:"LovaBoi",
+                altText:""
+            }
+        ],
         music:[{
             id:1,
-            caption:"Music Name",
-            link:"https://audiomack.com/lucky-gent/song/biem",
-            src:""
+            name:"BIEM!", 
+            artists:"Kalipharma Ft Lovaboi x Nah-nah",
+            link:[
+                {
+                    name:"Audiomack",
+                    link:"https://audiomack.com/lucky-gent/song/biem",
+                }
+            ],
+            cover:require("assets/img/ryan.jpg"),
+            released:"30 August 2019"
         },
         {
             id:2,
-            caption:"Music Name",
-            link:"https://audiomack.com/lucky-gent/song/low-tempo",
-            src:""
+            name:"Low Tempo",
+            artists:"Lucky Gent",
+            link:[
+                {
+                    name:"Audiomack",
+                    link:"https://audiomack.com/lucky-gent/song/low-tempo"
+                }
+            ],
+            cover:require("assets/img/ryan.jpg"),
+            released:"30 August 2019"
         },
         {
             id:3,
-            caption:"Music Name",
-            link:"https://audiomack.com/lucky-gent/song/give-me-wine",
-            src:""
+            name:"Give me wine",
+            artists:"Lucky Gent",
+            link:[
+                {
+                    name:"Audiomack",
+                    link:"https://audiomack.com/lucky-gent/song/give-me-wine",
+                }
+            ],
+            cover:require("assets/img/ryan.jpg"),
+            released:"30 August 2019"
         },
         {
             id:4,
-            caption:"Music Name",
-            link:"https://soundcloud.com/user-642014821/to-the-club",
-            src:""
+            name:"To the club",
+            artists:"Lovaboi",
+            link:[
+                {
+                    name:"Sound Cloud",
+                    link:"https://soundcloud.com/user-642014821/to-the-club",
+                }
+            ],
+            cover:require("assets/img/ryan.jpg"),
+            released:"30 August 2019"
         }]
     },
     {

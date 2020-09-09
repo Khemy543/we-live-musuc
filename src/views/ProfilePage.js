@@ -27,7 +27,7 @@ import {
   CardBody,
   Nav,
   Table,
-  TabContent,
+  CardFooter,
   TabPane,
   Container,
   Row,
@@ -41,7 +41,7 @@ import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 import Footer from "components/Footer/Footer.js";
 import data from "data";
 
-const carouselItems = [
+/* const carouselItems = [
   {
     src: require("assets/img/denys.jpg"),
     altText: "Slide 1",
@@ -57,7 +57,8 @@ const carouselItems = [
     altText: "Slide 3",
     caption: "Stocks, United States"
   }
-];
+]; */
+
 
 let ps = null;
 
@@ -68,7 +69,9 @@ class ProfilePage extends React.Component {
     this.state = {
       tabs: 1,
       artist:[],
-      contact:[]
+      contact:[],
+      images:[],
+      music:[]
     };
   }
   componentDidMount() {
@@ -77,7 +80,7 @@ class ProfilePage extends React.Component {
     let selectedArtist = tempData.find(item=>item.id === this.props.location.state.id);
     if(selectedArtist !== undefined){
       console.log(selectedArtist);
-      this.setState({artist:selectedArtist, contact:selectedArtist.contact})
+      this.setState({artist:selectedArtist, contact:selectedArtist.contact, images:selectedArtist.images, music:selectedArtist.music})
     }
     if (navigator.platform.indexOf("Win") > -1) {
       document.documentElement.className += " perfect-scrollbar-on";
@@ -104,8 +107,9 @@ class ProfilePage extends React.Component {
     });
   };
   render() {
-    const {id, name, about, profile} = this.state.artist;
-    const {facebook, twitter, instagram} = this.state.contact;
+    const {id, name, about, profile,music_type,user} = this.state.artist;
+    const {facebook, twitter, instagram, email} = this.state.contact;
+    const carouselItems = this.state.images;
     return (
       <>
         <ExamplesNavbar />
@@ -191,13 +195,13 @@ class ProfilePage extends React.Component {
                             </thead>
                             <tbody>
                               <tr>
-                                <td>The Daily: Nexo to Pay on Stable...</td>
+                                <td>{music_type}</td>
                               </tr>
                               <tr>
-                                <td>Venezuela Begins Public of Nation...</td>
+                                <td>{user}</td>
                               </tr>
                               <tr>
-                                <td>PR: BitCanna – Dutch Blockchain...</td>
+                                <td>{email}</td>
                               </tr>
                             </tbody>
                           </Table>
@@ -226,25 +230,41 @@ class ProfilePage extends React.Component {
                     intimate feel with a solid groove structure. An artist of
                     considerable range.
                   </p>
-                  <div className="btn-wrapper pt-3">
-                    <Button
-                      className="btn-simple"
-                      color="primary"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      <i className="tim-icons icon-book-bookmark" /> Bookmark
-                    </Button>
-                    <Button
-                      className="btn-simple"
-                      color="info"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      <i className="tim-icons icon-bulb-63" /> Check it!
-                    </Button>
-                  </div>
                 </Col>
+              </Row>
+            </Container>
+          </div>
+          <div className="section">
+          <img
+              alt="..."
+              className="dots"
+              src={require("assets/img/dots.png")}
+            />
+            <img
+              alt="..."
+              className="path"
+              src={require("assets/img/path4.png")}
+            />
+            <Container>
+              <Row>
+              {this.state.music.map((value, key)=>(
+                <Col md="4" key={key} style={{cursor:"pointer"}}
+                onClick={()=>this.props.history.push("/music-page",{id:value.id, artist:this.props.location.state.id})}>
+                <Card>
+                    <CardBody>
+                     <img 
+                       alt="#"
+                       src={value.cover}
+                     />
+                    </CardBody>
+                    <CardFooter>
+                      <h4 style={{fontSize:"20px"}}>{value.name}</h4>
+                      <p style={{marginTop:"-10px"}}>{value.artists}</p>
+                      <p>Released: {value.released}</p>
+                    </CardFooter>
+                  </Card>
+                </Col>
+                ))}
               </Row>
             </Container>
           </div>

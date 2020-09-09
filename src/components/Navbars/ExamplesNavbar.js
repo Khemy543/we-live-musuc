@@ -119,7 +119,7 @@ class PagesNavbar extends React.Component {
               <Row>
                 <Col className="collapse-brand" xs="6">
                   <a href="#pablo" onClick={e => e.preventDefault()}>
-                    BLK•React
+                    WLM•We Live Music
                   </a>
                 </Col>
                 <Col className="collapse-close text-right" xs="6">
@@ -149,7 +149,7 @@ class PagesNavbar extends React.Component {
               <NavItem className="p-0">
                 <NavLink
                   data-placement="bottom"
-                  href=""
+                  href="https://web.facebook.com/Welivemusic-111793120655616?_rdc=1&_rdr"
                   rel="noopener noreferrer"
                   target="_blank"
                   title="Like us on Facebook"
