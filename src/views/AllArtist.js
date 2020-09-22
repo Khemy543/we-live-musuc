@@ -35,7 +35,7 @@ class AllArtist extends React.Component {
     return (
       <>
         <ExamplesNavbar />
-        <section className="section section-lg section-coins" style={{marginTop:"50px"}}>
+        <section className="section section-lg section-coins" style={{marginTop:"-10px"}}>
             <img
               alt="..."
               className="path"
@@ -54,7 +54,7 @@ class AllArtist extends React.Component {
               <Row>
               {data.map((value,key)=>(
                 <Col md="4" key={key}>
-                  <Card className="card-coin card-plain">
+                  <Card className="card-coin card-plain" style={{marginTop:"65px"}}>
                     <CardHeader>
                       <img
                         alt="..."

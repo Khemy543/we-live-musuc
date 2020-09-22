@@ -239,13 +239,20 @@ class ProfilePage extends React.Component {
               alt="..."
               className="dots"
               src={require("assets/img/dots.png")}
-            />
+            />{/* 
             <img
               alt="..."
               className="path"
               src={require("assets/img/path4.png")}
-            />
+            /> */}
             <Container>
+              {this.state.music.length <=0?
+              <Row>
+              <Col md="4" className="ml-auto mr-auto">
+                  <h3>No Music Available Now</h3>
+              </Col>
+              </Row>
+              :
               <Row>
               {this.state.music.map((value, key)=>(
                 <Col md="4" key={key} style={{cursor:"pointer"}}
@@ -266,6 +273,7 @@ class ProfilePage extends React.Component {
                 </Col>
                 ))}
               </Row>
+            }
             </Container>
           </div>
          

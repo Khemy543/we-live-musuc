@@ -65,6 +65,8 @@ class Footer extends React.Component {
                   </NavLink>
                         We Live Music <br />
                         +233 26 780 8850 <br />
+                        +233 54 519 1182 <br />
+                        +233 55 888 9526 <br />
                         welivemusic99@gmail.com
                 </NavItem>
               </Nav>

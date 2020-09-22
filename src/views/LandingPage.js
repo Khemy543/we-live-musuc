@@ -141,7 +141,7 @@ class LandingPage extends React.Component {
                 </Col>
               </Row>
               <Row>
-              {data.map((value,key)=>(
+              {data.slice(0,3).map((value,key)=>(
                 <Col md="4" key={key}>
                   <Card className="card-coin card-plain">
                     <CardHeader>
@@ -471,11 +471,13 @@ class LandingPage extends React.Component {
                       <p>
                         We Live Music <br />
                         +233 26 780 8850 <br />
+                        +233 54 519 1182 <br />
+                        +233 55 888 9526 <br />
                         welivemusic99@gmail.com
                       </p>
                     </div>
                   </div>
-                  <div className=""  style={{marginTop:"20px"}}>
+                 {/*  <div className=""  style={{marginTop:"20px"}}>
                     <div className="icon icon-primary">
                       <i className="tim-icons icon-square-pin" />
                     </div>
@@ -487,7 +489,7 @@ class LandingPage extends React.Component {
                         Romania
                       </p>
                     </div>
-                  </div>
+                  </div> */}
                 </Col>
               </Row>
             </Container>
