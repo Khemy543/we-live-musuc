@@ -16,6 +16,7 @@
 
 */
 import React from "react";
+import axios from 'axios';
 // reactstrap components
 import {
   Button,
@@ -48,6 +49,29 @@ class LandingPage extends React.Component {
   componentWillUnmount() {
     document.body.classList.toggle("landing-page");
   }
+
+  state={
+    email:"",
+    name:"",
+    phone:"",
+    message:""
+  }
+
+  handleSubmit=(e)=>{
+    e.preventDefault();
+    axios.post("https://salty-anchorage-79079.herokuapp.com/api/v1/post-message",{
+      message:this.state.message,
+      phone:this.state.phone,
+      email:this.state.email,
+      name:this.state.name
+    })
+    .then(res=>{
+      console.log(res.data);
+    })
+    .catch(error=>{
+      console.log(error.response.data)
+    })
+  }
   render() {
     return (
       <>
@@ -68,7 +92,7 @@ class LandingPage extends React.Component {
                   <p className="text-white mb-3">
                     A wonderful serenity has taken possession of my entire soul,
                     like these sweet mornings of spring which I enjoy with my
-                    whole heart. I am alone, and feel...
+                    whole heart. Music and Beyond...
                   </p>
                   <div className="btn-wrapper mb-3">
                     <p className="category text-success d-inline">
@@ -109,7 +133,7 @@ class LandingPage extends React.Component {
                       <Button
                         className="btn-icon btn-round"
                         color="dribbble"
-                        href="https://www.instagram.com/welivemusic99/"
+                        href="https://instagram.com/welivemusic_?igshid=wz9p95vidrio"
                         rel="noopener noreferrer"
                         id="tooltip951161185"
                         target="_blank"
@@ -162,7 +186,7 @@ class LandingPage extends React.Component {
                       </Row>
                       <Row>
                         <ListGroup>
-                          <ListGroupItem>{value.no_of_tracks} tracks available</ListGroupItem>
+                          <ListGroupItem>{value.no_of_tracks}</ListGroupItem>
                         </ListGroup>
                       </Row>
                     </CardBody>
@@ -399,18 +423,18 @@ class LandingPage extends React.Component {
           <section className="section">
             <Container>
               <Row>
-                <Col md="6">
+                <Col md="6">  
                   <Card className="card-plain">
                     <CardHeader>
                       <h1 className="profile-title text-left">Contact Us</h1>
                     </CardHeader>
                     <CardBody>
-                      <Form>
+                      <Form onSubmit={this.handleSubmit}>
                         <Row>
                           <Col md="6">
                             <FormGroup>
                               <label>Your Name</label>
-                              <Input placeholder="name" type="text" />
+                              <Input placeholder="name" type="text" value={this.state.name} onChange={e=>this.setState({name:e.target.value})}/>
                             </FormGroup>
                           </Col>
                           <Col md="6">
@@ -419,6 +443,8 @@ class LandingPage extends React.Component {
                               <Input
                                 placeholder="email"
                                 type="email"
+                                value={this.state.email}
+                                onChange={e=>this.setState({email:e.target.value})}
                               />
                             </FormGroup>
                           </Col>
@@ -427,7 +453,7 @@ class LandingPage extends React.Component {
                           <Col md="6">
                             <FormGroup>
                               <label>Phone</label>
-                              <Input placeholder="phone" type="text" />
+                              <Input placeholder="phone" type="text" value={this.state.phone} onChange={e=>this.setState({phone:e.target.value})} />
                             </FormGroup>
                           </Col>
                           <Col md="6">
@@ -437,7 +463,7 @@ class LandingPage extends React.Component {
                           <Col md="12">
                             <FormGroup>
                               <label>Message</label>
-                              <Input placeholder="Hello there!" type="textarea" />
+                              <Input placeholder="Hello there!" type="textarea" value={this.state.message} onChange={e=>this.setState({message:e.target.value})} />
                             </FormGroup>
                           </Col>
                         </Row>
@@ -446,7 +472,7 @@ class LandingPage extends React.Component {
                           color="primary"
                           data-placement="right"
                           id="tooltip341148792"
-                          type="button"
+                          type="submit"
                         >
                           Send text
                         </Button>

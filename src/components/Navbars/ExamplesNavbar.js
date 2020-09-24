@@ -161,7 +161,7 @@ class PagesNavbar extends React.Component {
               <NavItem className="p-0">
                 <NavLink
                   data-placement="bottom"
-                  href="https://www.instagram.com/welivemusic99/"
+                  href="https://instagram.com/welivemusic_?igshid=wz9p95vidrio"
                   rel="noopener noreferrer"
                   target="_blank"
                   title="Follow us on Instagram"

@@ -7,8 +7,9 @@ const data = [
         profile:require("assets/img/Lovaboi/profile.jpeg"),
         music_type:" Afrobeats Recording Artist",
         user:"rapper, singer and songwriter",
-        no_of_tracks:4,
+        no_of_tracks:"4 tracks available",
         about:" I'm a simple but smart guy with an amazing voice, I rap, sing and also a songwriter. My mentor is wizkid. I love all genre of music.",
+        about_music:"Four songs released. Which includes song with Kalipharma, Boi_Nah Nah, Lucky Gent and Neon. Song available on Audiomack and Sound Cloud.",
         contact:{
             facebook:"https://web.facebook.com/roosevelt.ansaasare",
             instagram:"https://www.instagram.com/_lovaboi_/",
@@ -46,7 +47,7 @@ const data = [
                 }
             ],
             cover:require("assets/img/Lovaboi/Music/biem.jpeg"),
-            released:"30 August 2019"
+            released:"February 28, 2019"
         },
         {
             id:2,
@@ -59,7 +60,7 @@ const data = [
                 }
             ],
             cover:require("assets/img/Lovaboi/Music/lovetempo.jpeg"),
-            released:"30 August 2019"
+            released:"February 4, 2020"
         },
         {
             id:3,
@@ -67,12 +68,16 @@ const data = [
             artists:"Lucky Gent",
             link:[
                 {
+                    name:"Apple Music",
+                    link:"https://music.apple.com/gh/album/give-me-wine-feat-wasabi-nahnah/1479606182?i=1479606189",
+                },
+                {
                     name:"Audiomack",
                     link:"https://audiomack.com/lucky-gent/song/give-me-wine",
                 }
             ],
             cover:require("assets/img/Lovaboi/Music/givemewine.jpeg"),
-            released:"30 August 2019"
+            released:" August 28, 2019"
         },
         {
             id:4,
@@ -92,10 +97,11 @@ const data = [
         id:2,
         name:"Adolf C Pacman",
         profile:require("assets/img/Adolf/profile.jpeg"),
-        music_type:" AfroReggaeDancehall Artise",
+        music_type:" Afro Reggae Dancehall Artise",
         user:"Affro Reggae Dancehall",
-        no_of_tracks:0,
+        no_of_tracks:"No song out yet",
         about:" A simple Ghanaian youth brethren trying to make ends meet like everyone. One happy soul that finds fun in entertaining..",
+        about_music:"Get ready for your Affro, Reggae and Dancehall songs. No music released yet.",
         contact:{
             facebook:"https://mobile.facebook.com/timewillcomenow?ref=bookmarks&_rdc=1&_rdr#_=_ ",
             instagram:"https://www.instagram.com/pac.adolf/", 
@@ -130,8 +136,9 @@ const data = [
         profile:require("assets/img/Zmoke/profile.jpeg"),
         music_type:"Music Producer for All Genre",
         user:"Music Producer ",
-        no_of_tracks:1,
+        no_of_tracks:"1 track available",
         about:" Music producer for all genre of music. Born on 22 November 1997. My quote for music is always going to be 'music for the masters' ",
+        about_music:"Afro Dance hall beat by Zmoke. Fine lady(Afro Dance hall beat), Music found on Beatstars",
         contact:{
             facebook:"",
             instagram:"https://www.instagram.com/zmoke_1/",
@@ -175,7 +182,7 @@ const data = [
                 }
             ],
             cover:require("assets/img/Zmoke/music/fine_lady.png"),
-            released:"3 January 2020"
+            released:"June 3, 2020"
         },
         ]
     },
@@ -185,8 +192,9 @@ const data = [
         profile:require("assets/img/Kalipharma/profile.jpeg"),
         music_type:"Afro pop and trap music",
         user:"Change EP (T.E.C.H)",
-        no_of_tracks:5,
-        about:"Short info about artist:  A recording artist with a 5 track EP. Nominated for Cbaze awards 19 as the student rapper of the year.",
+        no_of_tracks:"5 tracks available",
+        about:"A recording artist with a 5 track EP. Nominated for Cbaze awards 19 as the student rapper of the year.",
+        about_music:"Nice EP CHANGE (T.E.C.H) which includes artise like Lovaboi, Boi_Nah_Nah, Tesla, Iquan,Young Prodigy, Zmoke. EP can be found on Audiomack.",
         contact:{
             facebook:"",
             instagram:"",
@@ -224,7 +232,7 @@ const data = [
                 }
             ],
             cover:require("assets/img/Lovaboi/Music/biem.jpeg"),
-            released:"30 August 2019"
+            released:"February 28, 2019"
         },
         {
             id:2,
@@ -237,7 +245,7 @@ const data = [
                 }
             ],
             cover:require("assets/img/Kalipharma/tech.jpeg"),
-            released:"30 August 2019"
+            released:"March 11, 2020"
         }]
     },
     {
@@ -246,8 +254,9 @@ const data = [
         profile:require("assets/img/OhLord/profile.jpeg"),
         music_type:" Afrobeats Recording Artist",
         user:"rapper, singer and songwriter",
-        no_of_tracks:0,
+        no_of_tracks:"No song out yet",
         about:" A simple Ghanaian youth brethren trying to make ends meet like everyone. One happy soul that finds fun in entertaining.",
+        about_music:"",
         contact:{
             facebook:"",
             instagram:"",
@@ -280,10 +289,11 @@ const data = [
         id:6,
         name:"Bishop",
         profile:require("assets/img/bishop/profile.jpeg"),
-        music_type:" Afrobeats Recording Artist",
+        music_type:" A rapper with melodies",
         user: "A rapper with melodies. Imagine drake, Cole, polo G and roddy ricch being one person on a Kanye instrumental.",
-        no_of_tracks:0,
-        about:" A youngin trying to better his life and that of Africa. A pressure cooker who resonates positive energy. Modern day Robin Hood.A rapper with melodies. Imagine drake, Cole, polo G and roddy ricch being one person on a Kanye instrumental.",
+        no_of_tracks:"1st song to be released on 23/10/2020",
+        about:" A youngin trying to better his life and that of Africa. A pressure cooker who resonates positive energy. Modern day Robin Hood. A Hero from Buokrom",
+        about_music:"",
         contact:{
             facebook:"",
             instagram:"https://www.instagram.com/bishop_1one/",
@@ -312,8 +322,9 @@ const data = [
         profile:require("assets/img/boiNana/profile.jpeg"),
         music_type:" Rnb and Afro dancehall artiste ",
         user:"good music for the funs ",
-        no_of_tracks:0,
-        about:" Ghanaian based musician inspired by the comfort of music and dedicated to Entertain and  hit your play list with good music for the funs .",
+        no_of_tracks:"No song out yet",
+        about:" Ghanaian based musician inspired by the comfort of music, dedicated to entertain the funs and  hit your playlist with good music.",
+        about_music:"",
         contact:{
             facebook:"https://web.facebook.com/Boi-Nah-Nah-Music-104236060947677",
             instagram:"https://www.instagram.com/boi_nah_nah/",
@@ -348,8 +359,9 @@ const data = [
         profile:require("assets/img/kayb/profile.jpeg"),
         music_type:" Singer of All genre ",
         user:" Music is the  food  for the soul .",
-        no_of_tracks:0,
+        no_of_tracks:"No song out yet",
         about:"Am a Ghanaian based singer of all genre. Born on 12 April 1996.",
+        about_music:"",
         contact:{
             facebook:"https://web.facebook.com/profile.php?id=100012194168219",
             instagram:"https://www.instagram.com/kofibista/",

@@ -107,7 +107,7 @@ class ProfilePage extends React.Component {
     });
   };
   render() {
-    const {id, name, about, profile,music_type,user} = this.state.artist;
+    const {id, name, about, profile,music_type,user, about_music} = this.state.artist;
     const {facebook, twitter, instagram, email} = this.state.contact;
     const carouselItems = this.state.images;
     return (
@@ -224,11 +224,12 @@ class ProfilePage extends React.Component {
                   <h1 className="profile-title text-left">All Musics</h1>
                   <h5 className="text-on-back">02</h5>
                   <p className="profile-description text-left">
-                    An artist of considerable range, Ryan — the name taken by
+                   {/*  An artist of considerable range, Ryan — the name taken by
                     Melbourne-raised, Brooklyn-based Nick Murphy — writes,
                     performs and records all of his own music, giving it a warm,
                     intimate feel with a solid groove structure. An artist of
-                    considerable range.
+                    considerable range. */}
+                    {about_music}
                   </p>
                 </Col>
               </Row>

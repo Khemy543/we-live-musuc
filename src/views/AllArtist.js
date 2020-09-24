@@ -73,7 +73,7 @@ class AllArtist extends React.Component {
                       </Row>
                       <Row>
                         <ListGroup>
-                          <ListGroupItem>{value.no_of_tracks} tracks available</ListGroupItem>
+                          <ListGroupItem>{value.no_of_tracks}</ListGroupItem>
                         </ListGroup>
                       </Row>
                     </CardBody>
