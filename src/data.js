@@ -47,7 +47,7 @@ const data = [
                 }
             ],
             cover:require("assets/img/Lovaboi/Music/biem.jpeg"),
-            released:"February 28, 2019"
+            released:"October 16, 2018"
         },
         {
             id:2,
@@ -60,7 +60,7 @@ const data = [
                 }
             ],
             cover:require("assets/img/Lovaboi/Music/lovetempo.jpeg"),
-            released:"February 4, 2020"
+            released:"February 14, 2020"
         },
         {
             id:3,
@@ -77,7 +77,7 @@ const data = [
                 }
             ],
             cover:require("assets/img/Lovaboi/Music/givemewine.jpeg"),
-            released:" August 28, 2019"
+            released:" September 13, 2019"
         },
         {
             id:4,
@@ -90,7 +90,7 @@ const data = [
                 }
             ],
             cover:require("assets/img/Lovaboi/Music/totheclub.jpeg"),
-            released:"30 August 2019"
+            released:"May 20, 2020"
         }]
     },
      {
