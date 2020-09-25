@@ -137,7 +137,7 @@ class PagesNavbar extends React.Component {
               <NavItem className="p-0">
                 <NavLink
                   data-placement="bottom"
-                  href="https://twitter.com/welivemusic2"
+                  href="https://twitter.com/welivemusic_"
                   rel="noopener noreferrer"
                   target="_blank"
                   title="Follow us on Twitter"

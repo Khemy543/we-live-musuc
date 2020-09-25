@@ -113,7 +113,7 @@ class LandingPage extends React.Component {
                       <Button
                         className="btn-icon btn-round"
                         color="twitter"
-                        href="https://twitter.com/welivemusic2"
+                        href="https://twitter.com/welivemusic_"
                         rel="noopener noreferrer"
                         id="tooltip639225725"
                         target="_blank"

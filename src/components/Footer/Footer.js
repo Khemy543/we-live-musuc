@@ -77,7 +77,7 @@ class Footer extends React.Component {
                 <Button
                   className="btn-icon btn-neutral btn-round btn-simple"
                   color="default"
-                  href="https://twitter.com/welivemusic2"
+                  href="https://twitter.com/welivemusic_"
                   id="tooltip622135962"
                   target="_blank"
                 >

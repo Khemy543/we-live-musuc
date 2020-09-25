@@ -97,10 +97,10 @@ const data = [
         id:2,
         name:"Adolf C Pacman",
         profile:require("assets/img/Adolf/profile.jpeg"),
-        music_type:" Afro Reggae Dancehall Artise",
+        music_type:" Afro Reggae Dancehall Artist",
         user:"Affro Reggae Dancehall",
         no_of_tracks:"No song out yet",
-        about:" A simple Ghanaian youth brethren trying to make ends meet like everyone. One happy soul that finds fun in entertaining..",
+        about:"Ghanaian philanthropist that preaches more about African unity and black elevation.",
         about_music:"Get ready for your Affro, Reggae and Dancehall songs. No music released yet.",
         contact:{
             facebook:"https://mobile.facebook.com/timewillcomenow?ref=bookmarks&_rdc=1&_rdr#_=_ ",
@@ -290,10 +290,10 @@ const data = [
         name:"Bishop",
         profile:require("assets/img/bishop/profile.jpeg"),
         music_type:" A rapper with melodies",
-        user: "A rapper with melodies. Imagine drake, Cole, polo G and roddy ricch being one person on a Kanye instrumental.",
+        user: "",
         no_of_tracks:"1st song to be released on 23/10/2020",
         about:" A youngin trying to better his life and that of Africa. A pressure cooker who resonates positive energy. Modern day Robin Hood. A Hero from Buokrom",
-        about_music:"",
+        about_music:"no music available now",
         contact:{
             facebook:"",
             instagram:"https://www.instagram.com/bishop_1one/",
@@ -324,7 +324,7 @@ const data = [
         user:"good music for the funs ",
         no_of_tracks:"No song out yet",
         about:" Ghanaian based musician inspired by the comfort of music, dedicated to entertain the funs and  hit your playlist with good music.",
-        about_music:"",
+        about_music:"No music available now",
         contact:{
             facebook:"https://web.facebook.com/Boi-Nah-Nah-Music-104236060947677",
             instagram:"https://www.instagram.com/boi_nah_nah/",
@@ -361,7 +361,7 @@ const data = [
         user:" Music is the  food  for the soul .",
         no_of_tracks:"No song out yet",
         about:"Am a Ghanaian based singer of all genre. Born on 12 April 1996.",
-        about_music:"",
+        about_music:"No music available now",
         contact:{
             facebook:"https://web.facebook.com/profile.php?id=100012194168219",
             instagram:"https://www.instagram.com/kofibista/",
